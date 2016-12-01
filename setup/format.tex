@@ -53,7 +53,7 @@
 \dottedcontents{subsection}[41pt]{}{30pt}{0.3pc}
 % 按医大标准, 1级目录无缩进，以下各级标题均为2汉字
 
-% 缩小目录中各级标题之间的缩进，使它们相隔一个字符距离，也就是12pt
+% 按工大标准, 缩小目录中各级标题之间的缩进，使它们相隔一个字符距离，也就是12pt
 \makeatletter
 \renewcommand*\l@chapter{\@dottedtocline{0}{0em}{5em}}%控制英文目录： 细点\@dottedtocline  粗点\@dottedtoclinebold
 \renewcommand*\l@section{\@dottedtocline{1}{1em}{1.8em}}
@@ -81,11 +81,11 @@
 
 \ifxueweidoctor
 \fancyhead[CO]{\song \xiaowu\leftmark}
-\fancyhead[CE]{\song \xiaowu 医科大学外科学(骨外)学位论文}%
+\fancyhead[CE]{\song \xiaowu 哈尔滨医科大学外科学(骨外)学位论文}%
 \fancyfoot[C,C]{\xiaowu ~\thepage~}
 \else
 \fancyhead[CO]{\song \xiaowu \leftmark}
-\fancyhead[CE]{\song \xiaowu 医科大学外科学(骨外)学位论文}%
+\fancyhead[CE]{\song \xiaowu 哈尔滨医科大学外科学(骨外)学位论文}%
 \fancyfoot[C,C]{\xiaowu ~\thepage~}
 \fi
 % ==================
@@ -269,7 +269,7 @@
     \begin{center}\xiaoer\song{\@cauthor}\end{center}}
 
     \parbox[t][1.4cm][t]{\textwidth}{
-    \begin{center}\song\sanhao{哈尔滨医科大学}\end{center} }
+    \begin{center}\song\sanhao{哈尔滨医科大学}\end{center} }
     
     {\song\sanhao{\@cdate}}
 
@@ -315,7 +315,7 @@
     %{\hei\xiaosan 专\hfill 业}           & \@csupervisor\\
 	%\@cassosupervisor
 	%\@ccosupervisor
-	{~~} & \medthss@int@fillinblank{1}{11.5cm}{若超行，自行修改此行及上行，不超用半角波浪线占位}\\
+	{~~} & \medthss@int@fillinblank{1}{11.5cm}{若超行手动修改这两格，不超用～占位}\\
     {\hei\xiaosan 学\hfill 科\hfill 专\hfill 业} & \medthss@int@fillinblank{1}{11.5cm}{\@cdegree}\\
     {\hei\xiaosan 学\hfill 位\hfill 类\hfill 别}           & \medthss@int@fillinblank{1}{11.5cm}{\@csubject}\\
     {\hei\xiaosan 硕\hfill 士\hfill 研\hfill 究\hfill 生} & \medthss@int@fillinblank{1}{11.5cm}{\@caffil}\\
