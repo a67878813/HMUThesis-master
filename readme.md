@@ -3,16 +3,6 @@
 
 - [哈　尔　滨　医　科　大　学](#哈　尔　滨　医　科　大　学)
 - [硕博士学位论文XeLaTeX模版](#硕博士学位论文xelatex模版)
-  - [版本介绍](#版本介绍)
-    - [关于字体](#关于字体)
-    - [关于查重](#关于查重)
-    - [关于编译](#关于编译)
-  - [这个网站的使用说明](#这个网站的使用说明)
-    - [对于开发者](#对于开发者)
-    - [对于使用者](#对于使用者)
-  - [FAQ](#faq)
-    - [为什么要添加XeLaTeX？](#为什么要添加xelatex？)
-    - [为什么原版本不支持XeLaTeX了？](#为什么原版本不支持xelatex了？)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
