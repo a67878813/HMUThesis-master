@@ -90,7 +90,7 @@ word文件夹模式二：
 其实这不是错误……
 
 因为LaTeX最初设计用来排版英文，所以对于中文在基因上先天不足，唯有靠后天补营养。
-当bibTeX使用模板中的哈工大参考文献样式bst文件来排版参考文献时，会弹出错误提示，这个错误提示不是真正意义的错误。
+当bibTeX使用模板中的参考文献样式bst文件来排版参考文献时，会弹出错误提示，这个错误提示不是真正意义的错误。
 为什么呢？因为我们的目的已经达到了，已经生成好了bbl文件。
 于是这个尴尬的局面出现了：如果采用如下方法在Makefile文件里面将bibTeX错误提示屏蔽掉，
 
@@ -124,30 +124,10 @@ word文件夹模式二：
 3. 该模板目录结构和各自文件大致功能
 
 		├── appendix （论文后面的附表，这里需要编写）
-		│   ├── acknowledgements.tex
-		│   ├── appa.tex
-		│   ├── authorization.tex
-		│   ├── publications.tex
-		│   └── resume.tex
 		├── body （论文的正文部分，正文写在这里需要编写）
-		│   ├── conclusion.tex
-		│   ├── equations.tex
-		│   ├── figures.tex
-		│   ├── introduction.tex
-		│   ├── others.tex
-		│   ├── simpleequation.tex
-		│   ├── simplefigure.tex
-		│   ├── simplereference.tex
-		│   ├── simpletable.tex
-		│   └── tables.tex
 		├── clean.bat （用于清理编译过程中的中间文件，使目录干净点）
 		├── cover.tex （这是论文中封面，摘要部分，这里需要编写）
 		├── figures （存放论文的图片的文件夹）
-		│   ├── golfer.eps
-		│   ├── latex.eps
-		│   ├── list.eps
-		│   ├── pdf.eps
-		│   └── word.eps
 		├── GBT7714-2005NLang-HIT.bst （参考文献样式文件）
 		├── main.pdf （最终生成的论文）
 		├── main.tex （论文的主文件，有需要的时候要适当修改调整这个文件）
@@ -156,12 +136,6 @@ word文件夹模式二：
 		├── readme.md
 		├── reference.bib （用于存放参考文献，BibTeX格式，需要编写）
 		├── setup （论文的设置部分）
-		│   ├── Definition.tex
-		│   ├── format.tex
-		│   ├── package.tex
-		│   └── type.tex
 		├── tex.snippets （是snippet 模板，用来给vim编辑器用）
 		├── XeLaTeX支持说明(第１章开始).pdf
 		└── 模板更新记录.txt
-	
-修改自哈工大PlutoThesis2014模板，使用了北大模板中部分代码。
