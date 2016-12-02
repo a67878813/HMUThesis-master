@@ -11,7 +11,11 @@
 
 ### 使用方法
 1. 已经配置好的虚拟机文件如下
+http://pan.baidu.com/s/1i5Df9nJ
+ubuntu的密码123123
 需安装vmware player
+http://www.vmware.com/products/player/playerpro-evaluation.html
+
 
 2. 本模板只是初步可用的xeLaTeX版，需要有精力的同学进一步完善。
 
