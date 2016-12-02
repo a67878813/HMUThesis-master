@@ -15,7 +15,7 @@
 >        ubuntu的密码123123
 >        需安装vmware player
 >        http://www.vmware.com/products/player/playerpro-evaluation.html
-	ddd引用文献管理软件：很多，如endnote mendeley等。生成对应的bib文件后，在tex中用\citeup等方式引用。
+>	引用文献管理软件：很多，如endnote mendeley等。生成对应的bib文件后，在tex中用\citeup等方式引用。
 2. 本模板只是初步可用的xeLaTeX版，需要有精力的同学进一步完善。
 
 3. 参考文献排版是最令人心动的功能。
