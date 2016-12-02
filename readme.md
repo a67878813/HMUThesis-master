@@ -14,13 +14,11 @@
 >        http://pan.baidu.com/s/1i5Df9nJ
 >        ubuntu的密码123123
 >        需安装vmware player
->        http://www.vmware.com/products/player/playerpro-evaluation.html
-
-
+>        http://www.vmware.com/products/player/playerpro-evaluation.html
+	ddd引用文献管理软件：很多，如endnote mendeley等。生成对应的bib文件后，在tex中用\citeup等方式引用。
 2. 本模板只是初步可用的xeLaTeX版，需要有精力的同学进一步完善。
 
-3. 本版本源于哈工大pluto模板，部分代码来自北大模板。
-
+3. 参考文献排版是最令人心动的功能。
 4. 在虚拟机中打开main.tex，改改改之后，点击绿色双箭头构建并查看（F5）即可。生成引用及目录需要点2次。
 
 5. 用xeLaTeX，中文支持优秀。生成的pdf可查重
@@ -120,8 +118,6 @@ word文件夹模式二：
 
 当前master分支为临时可用的XeLaTeX模板。
 ### 对于使用者
-0. 直接使用我配置好的ubuntu16.04 texlive2016 版本，最省心。\\下载地址如下
-	htttt
 1. 推荐使用texlive安装包，完成安装后需手动更新至最新版。
 
 2. 稳定版本的发布地址（可在此下载稳定的版本）
