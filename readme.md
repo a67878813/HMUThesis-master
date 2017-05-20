@@ -1,9 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [哈　尔　滨　医　科　大　学](#哈　尔　滨　医　科　大　学)
-- [硕博士学位论文XeLaTeX模版](#硕博士学位论文xelatex模版)
-
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 #哈　尔　滨　医　科　大　学  
