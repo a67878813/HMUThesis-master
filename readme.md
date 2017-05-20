@@ -8,21 +8,20 @@
 
 #哈　尔　滨　医　科　大　学  
 #硕博士学位论文xelatex模版
-
+最新更新时间 2017-05-20
 ### 使用方法
 
 最简使用方式如下
 
->		安装vmware player
+>		1. 下载安装vmware player
 >		http://www.vmware.com/products/player/playerpro-evaluation.html
->		下载制作好的latex虚拟机
+>		2. 下载已测试的虚拟机
 >		http://pan.baidu.com/s/1i5Df9nJ
->		ubuntu密码123123
->		解压缩后，用VM player导入。
->		开机后，用虚拟机下载该模板。打开其中的main.tex
->		修改标题，作者等信息，观察代码，修改原有章，尝试三线表，尝试引用。
+>		3. 在VM player中，导入虚拟机。用户名ubuntu密码123123
+>		4. 在虚拟机中使用模板，直接双击其中的main.tex进行修改
+>		5. 修改标题，作者等信息，观察代码，修改原有章，尝试三线表，尝试引用。
 >		引用文献管理软件：很多，如endnote mendeley等。生成对应的bib文件后，在tex中用\citeup等方式引用。
->		以上均没问题后，正式写。tex最好的一点就是引用文献的排版不需要干预。
+>		6. 正式写作。tex最好的一点就是引文、表格、图片的排版基本不需要干预。
 
 ### 更新记录
 2017-05-20
