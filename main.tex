@@ -22,9 +22,12 @@
 \input{cover} % 封面
 % 中英目录
 \pdfbookmark[0]{目~录}{mulu}
-\pagestyle{empty}
+
 \tableofcontents    % 中文目录
+\pagestyle{empty}
+\thispagestyle{empty}
 \clearpage%{\pagestyle{empty}\cleardoublepage}
+
 \ifxueweidoctor
 \tableofengcontents % 英文目录
 
@@ -36,11 +39,12 @@
 \pagestyle{fancyplain}
 \include{body/acronym}%缩略词表
 \include{body/introduction}
-\include{body/figures}
-\include{body/tables}
-\include{body/equations}
-\include{body/others}
-\include{body/conclusion}   % 结论
+\include{body/mainbody}
+%\include{body/figures}
+%\include{body/tables}
+%\include{body/equations}
+%\include{body/others}
+%\include{body/conclusion}   % 结论
 
 %\include{body/simplefigure}
 %\include{body/simpletable}
@@ -52,11 +56,13 @@
 \defaultfont
 \bibliographystyle{GBT7714-2005NLang-HIT}
 \addcontentsline{toc}{chapter}{参考文献}      % 参考文献加入到中文目录
-\addcontentsline{toe}{chapter}{\bfseries  References} % 参考文献加入到英文目录
+\addcontentsline{toe}{chapter}{\bfseries  REFERENCES} % 参考文献加入到英文目录
 \addtolength{\bibsep}{-0.8em}
-\nocite{*}  %若将此命令屏蔽掉，则未引用的文献不会出现在文后的参考文献列表中。
-\bibliography{reference}
-\include{appendix/appA}    % 附录
+%\nocite{*}  %若将此命令屏蔽掉，则未引用的文献不会出现在文后的参考文献列表中。
+%\bibliography{reference.bib}
+\bibliography{MyCollection.bib}
+%\bibliography{nongzhong.
+%\include{appendix/appA}    % 附录
 %\include{appendix/publications}    % 所发文章
 %\include{appendix/Authorization}   % 承诺
 \include{appendix/acknowledgements}% 致谢

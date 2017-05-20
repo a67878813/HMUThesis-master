@@ -67,13 +67,13 @@ ENTRY
   { label extra.label sort.label short.list }
 
 INTEGERS { output.state before.all mid.sentence after.sentence after.block }
-FUNCTION {format.url}
-{ url empty$
-    { "" }
-    { new.block 
-    "\url{" url * "}" * }
-  if$
-}
+%FUNCTION {format.url}
+%{ url empty$
+%    { "" }
+%    { new.block 
+%    "\url{" url * "}" * }
+%  if$
+%}
 FUNCTION {init.state.consts}
 { #0 'before.all :=
   #1 'mid.sentence :=
@@ -2033,9 +2033,9 @@ FUNCTION {article}
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
-  note output
+%  note output
   fin.entry
 }
 if$
@@ -2073,9 +2073,9 @@ FUNCTION {book}
     }
   if$
   new.block
-  format.url output
+%  format.url output
   new.block
-  note output
+%  note output
   fin.entry
 }
 
@@ -2112,7 +2112,7 @@ FUNCTION {book}
   new.block
   format.url output
   new.block
-  note output
+%  note output
   fin.entry
 }
 if$
@@ -2133,9 +2133,9 @@ FUNCTION {booklet}
   address output
   output.year.check
   new.block
-  format.url output
+ % format.url output
   new.block
-  note output
+%  note output
   fin.entry
 }
 
@@ -2149,7 +2149,7 @@ FUNCTION {booklet}
   address output
   output.cyear.month.check                                    %wk
   new.block
-  format.url output
+%  format.url output
   new.block
   note output
   fin.entry
@@ -2188,9 +2188,9 @@ FUNCTION {inbook}
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
-  note output
+%  note output
   fin.entry
 }
 
@@ -2223,9 +2223,9 @@ FUNCTION {inbook}
     }
   if$
   new.block
-  format.url output
+%  format.url output
   new.block
-  note output
+ % note output
   fin.entry
 }
 if$
@@ -2258,9 +2258,9 @@ FUNCTION {incollection}                                     %wk
     }
   if$
 
-  format.url output
+%  format.url output
   new.block
-  note output
+ % note output
   fin.entry
 }
 
@@ -2288,9 +2288,9 @@ FUNCTION {incollection}                                     %wk
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
-  note output
+ % note output
   fin.entry
 }
 if$
@@ -2340,7 +2340,7 @@ FUNCTION {inproceedings}                                    %wk 改自incollecti
       new.block
     }
   if$
-  format.url output
+%  format.url output
   new.block
   note output
   fin.entry
@@ -2370,7 +2370,7 @@ FUNCTION {inproceedings}                                    %wk 改自incollecti
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2411,7 +2411,7 @@ FUNCTION {TECHREPORT}                             %wk   改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2445,7 +2445,7 @@ FUNCTION {TECHREPORT}                             %wk   改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2485,7 +2485,7 @@ FUNCTION {mastersthesis}                                %wk   改自book类型
     }
   if$
   new.block
-  format.url output
+%  format.url output
   new.block
   note output
   fin.entry
@@ -2520,7 +2520,7 @@ FUNCTION {mastersthesis}                                %wk   改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2558,7 +2558,7 @@ FUNCTION {phdthesis}                        %wk  改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2593,7 +2593,7 @@ FUNCTION {phdthesis}                        %wk  改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2634,7 +2634,7 @@ FUNCTION {proceedings}            %改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2669,7 +2669,7 @@ FUNCTION {proceedings}            %改自book类型
     }
   if$
   new.block
-  format.url output
+%  format.url output
   new.block
   note output
   fin.entry
@@ -2709,7 +2709,7 @@ FUNCTION {manual}             %改自book类型
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2782,7 +2782,7 @@ FUNCTION {misc}              %作为非常规文献的格式，可靠性低，�
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -2818,7 +2818,7 @@ FUNCTION {misc}              %作为非常规文献的格式，可靠性低，�
     }
   if$
   new.block
-  format.url output
+ % format.url output
   new.block
   note output
   fin.entry
@@ -3543,14 +3543,14 @@ FUNCTION {begin.bib}
   write$ newline$
   "\providecommand{\natexlab}[1]{#1}"
   write$ newline$
-  "\providecommand{\url}[1]{\texttt{#1}}"
-  write$ newline$
-  "\expandafter\ifx\csname urlstyle\endcsname\relax"
-  write$ newline$
-  "  \providecommand{\doi}[1]{doi: #1}\else"
-  write$ newline$
-  "  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi"
-  write$ newline$
+ % "\providecommand{\url}[1]{\texttt{#1}}"
+ % write$ newline$
+ % "\expandafter\ifx\csname urlstyle\endcsname\relax"
+%  write$ newline$
+ % "  \providecommand{\doi}[1]{doi: #1}\else"
+ % write$ newline$
+ % "  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi"
+ % write$ newline$
 }
 
 EXECUTE {begin.bib}
