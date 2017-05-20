@@ -3,9 +3,9 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-#哈　尔　滨　医　科　大　学  
-#硕博士学位论文xelatex模版
-最新更新时间 2017-05-20
+# 哈　尔　滨　医　科　大　学  
+# 硕博士学位论文xelatex模版
+## 最后更新时间 2017-05-20
 ### 使用方法
 
 最简使用方式如下
